@@ -1,0 +1,29 @@
+{
+  "name": "one-dark-nova-syntax",
+  "version": "0.0.0",
+  "description": "One Dark + Nova syntax theme for Atom.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "atom-theme",
+    "color-scheme",
+    "colors"
+  ],
+  "homepage": "https://github.com/pdhoopr/one-dark-nova-syntax#readme",
+  "bugs": {
+    "url": "https://github.com/pdhoopr/one-dark-nova-syntax/issues"
+  },
+  "license": "MIT",
+  "author": "Patrick Hooper <patrick.d.hooper@gmail.com> (http://patrick.hoopr.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdhoopr/one-dark-nova-syntax"
+  },
+  "scripts": {
+    "start": "scripts/start"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "theme": "syntax"
+}
