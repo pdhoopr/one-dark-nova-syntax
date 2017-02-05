@@ -1,32 +1,36 @@
 @import "./colors";
 
 atom-text-editor {
-  color: @nova_normal_white;
-  background-color: @nova_normal_black;
+  color: @one_dark_text;
+  background-color: @one_dark_background;
 
   .gutter {
-    color: @nova_decoration_light;
-    background-color: @nova_normal_black;
+    color: @one_dark_gutter;
+    background-color: @one_dark_background;
 
     .line-number {
+      -webkit-font-smoothing: antialiased;
       opacity: 1;
       &.cursor-line {
         color: @nova_purpose_user_current_state;
-        background-color: @nova_normal_black;
+        background-color: @one_dark_cursor_line;
+        &-no-selection {
+          background-color: transparent;
+        }
       }
     }
   }
 
   .invisible-character {
-    color: @nova_purpose_trivial;
+    color: @one_dark_guide;
   }
 
   .indent-guide {
-    color: @nova_decoration_medium;
+    color: @one_dark_guide;
   }
 
   .wrap-guide {
-    background-color: @nova_decoration_medium;
+    background-color: @one_dark_guide;
   }
 
   .cursor {
@@ -34,22 +38,29 @@ atom-text-editor {
   }
 
   .lines .line.cursor-line {
-    background-color: @nova_decoration_medium;
+    background-color: @one_dark_cursor_line;
   }
 
   .selection .region {
-    background-color: @nova_purpose_user_current_state;
-    opacity: 0.5;
+    background-color: @one_dark_selection;
+  }
+
+  .find-result .region {
+    background-color: @one_dark_find_result;
+    border: 0;
+  }
+
+  .current-result .region {
+    border: 2px solid @nova_normal_cyan;
   }
 
   .bracket-matcher .region {
     border: none;
-    outline: 1px dotted @nova_purpose_user_current_state;
+    outline: 1px solid @nova_purpose_user_current_state;
   }
 
   .spell-check-misspelling .region {
-    border: none;
-    outline: 1px dotted @nova_purpose_user_action_needed;
+    border-bottom: 2px dotted @nova_normal_red;
   }
 
   .fold-marker:after,
