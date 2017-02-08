@@ -12,7 +12,7 @@ atom-text-editor {
       -webkit-font-smoothing: antialiased;
       opacity: 1;
       &.cursor-line {
-        color: @nova_purpose_user_current_state;
+        color: @nova_normal_cyan;
         background-color: @one_dark_cursor_line;
         &-no-selection {
           background-color: transparent;
@@ -34,7 +34,7 @@ atom-text-editor {
   }
 
   .cursor {
-    opacity: 0.8 !important;
+    border-left: 2px solid @nova_normal_cyan;
   }
 
   .lines .line.cursor-line {
@@ -56,7 +56,7 @@ atom-text-editor {
 
   .bracket-matcher .region {
     border: none;
-    outline: 1px solid @nova_purpose_user_current_state;
+    outline: 1px solid @highlight_selected_border;
   }
 
   .spell-check-misspelling .region {
@@ -65,11 +65,11 @@ atom-text-editor {
 
   .fold-marker:after,
   .gutter .line-number.folded {
-    color: @nova_purpose_user_current_state;
+    color: @nova_normal_cyan;
   }
 
   .bracket-matcher .region {
-    border-color: @nova_purpose_user_current_state;
+    border-color: @nova_normal_cyan;
   }
 
   .scrollbars-visible-always {
@@ -85,7 +85,7 @@ atom-text-editor {
 
     /deep/ ::-webkit-scrollbar-thumb,
     /deep/ ::-webkit-scrollbar-thumb:hover {
-      background: @nova_purpose_user_current_state;
+      background: @nova_normal_cyan;
       border-radius: 5px;
       box-shadow: 0;
     }
