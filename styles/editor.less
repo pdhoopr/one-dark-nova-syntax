@@ -10,10 +10,10 @@ atom-text-editor {
 
     .line-number {
       -webkit-font-smoothing: antialiased;
-      opacity: 1;
       &.cursor-line {
-        color: @nova_normal_cyan;
-        background-color: @one_dark_cursor_line;
+        color: @one_dark_text;
+        background-color: @one_dark_background_selected;
+
         &-no-selection {
           background-color: transparent;
         }
@@ -34,7 +34,7 @@ atom-text-editor {
   }
 
   .cursor {
-    border-left: 2px solid @nova_normal_cyan;
+    border-left: 2px solid @one_dark_accent;
   }
 
   .lines .line.cursor-line {
@@ -51,7 +51,8 @@ atom-text-editor {
   }
 
   .current-result .region {
-    border: 2px solid @nova_normal_cyan;
+    background-color: @one_dark_find_result;
+    border: 2px solid @one_dark_accent;
   }
 
   .bracket-matcher .region {
@@ -65,11 +66,7 @@ atom-text-editor {
 
   .fold-marker:after,
   .gutter .line-number.folded {
-    color: @nova_normal_cyan;
-  }
-
-  .bracket-matcher .region {
-    border-color: @nova_normal_cyan;
+    color: @one_dark_text;
   }
 
   .scrollbars-visible-always {
@@ -80,12 +77,12 @@ atom-text-editor {
 
     /deep/ ::-webkit-scrollbar-track,
     /deep/ ::-webkit-scrollbar-corner {
-      background: @nova_decoration_light;
+      background: @one_dark_gutter;
     }
 
     /deep/ ::-webkit-scrollbar-thumb,
     /deep/ ::-webkit-scrollbar-thumb:hover {
-      background: @nova_normal_cyan;
+      background: @one_dark_accent;
       border-radius: 5px;
       box-shadow: 0;
     }

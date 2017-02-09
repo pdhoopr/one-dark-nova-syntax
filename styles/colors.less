@@ -3,14 +3,21 @@
 // ==================================================================
 
 // ONE DARK
-@one_dark_background: #282C34;
-@one_dark_comment: #5c6370;
-@one_dark_cursor_line: rgba(153, 187, 255, 0.04);
-@one_dark_find_result: rgba(82, 139, 255, 0.24);
-@one_dark_guide: rgba(171, 178, 191, 0.15);
-@one_dark_gutter: #636d83;
-@one_dark_selection: #3e4451;
-@one_dark_text: #abb2bf;
+@one_dark_hue: 220;
+@one_dark_accent: hsl(@one_dark_hue, 100%, 66%);
+@one_dark_background: hsl(@one_dark_hue, 13%, 18%);
+@one_dark_background_selected: lighten(@one_dark_background, 2%);
+@one_dark_comment: hsl(@one_dark_hue, 10%, 40%);
+@one_dark_cursor_line: hsla(@one_dark_hue, 100%,  80%, .04);
+@one_dark_find_result: fade(@one_dark_accent, 24%);
+@one_dark_git_added: hsl(150, 60%, 54%);
+@one_dark_git_modified: hsl(40, 60%, 70%);
+@one_dark_git_removed: hsl(0, 70%, 60%);
+@one_dark_git_renamed: hsl(208, 100%, 60%);
+@one_dark_guide: fade(@one_dark_text, 15%);
+@one_dark_gutter: darken(@one_dark_text, 26%);
+@one_dark_selection: lighten(@one_dark_background, 10%);
+@one_dark_text: hsl(@one_dark_hue, 14%, 71%);
 @highlight_selected_border: #ddd;
 
 // NORMAL
