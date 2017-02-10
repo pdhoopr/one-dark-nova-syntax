@@ -19,6 +19,7 @@
 .syntax--css.syntax--property-value,
 .syntax--dictionary.syntax--value,
 .syntax--html.syntax--id,
+.syntax--gfm.syntax--comment .syntax--link,
 .syntax--markup.syntax--link,
 .syntax--markup.syntax--raw,
 .syntax--punctuation.syntax--string,
@@ -31,6 +32,8 @@
 
 .syntax--boolean,
 .syntax--constant,
+.syntax--gfm.syntax--constant.syntax--entity,
+.syntax--gfm.syntax--constant .syntax--entity,
 .syntax--nan,
 .syntax--numeric,
 .syntax--scss.syntax--operator,
@@ -77,6 +80,8 @@
 .syntax--css.syntax--property-name,
 .syntax--html.syntax--attribute-name,
 .syntax--jsx.syntax--attribute-name,
+.syntax--markup.syntax--bold,
+.syntax--markup.syntax--italic,
 .syntax--operator,
 .syntax--operator.syntax--punctuation,
 .syntax--scss.syntax--attribute-selector .syntax--operator.syntax--punctuation,
@@ -84,6 +89,14 @@
 .syntax--scss.syntax--meta.syntax--property-value,
 .syntax--scss.syntax--property-name {
   color: @nova_normal_yellow;
+}
+
+.syntax--markup.syntax--bold {
+  font-weight: bold;
+}
+
+.syntax--markup.syntax--italic {
+  font-style: italic;
 }
 
 .syntax--css.syntax--pseudo-class,
@@ -112,14 +125,6 @@
   font-style: italic;
 }
 
-.syntax--markup.syntax--bold {
-  font-weight: bold;
-}
-
-.syntax--markup.syntax--italic {
-  font-style: italic;
-}
-
 .syntax--arrow,
 .syntax--brace.syntax--curly,
 .syntax--brace.syntax--round,
@@ -136,8 +141,9 @@
 .syntax--json.syntax--array.syntax--end,
 .syntax--jsx.syntax--embedded,
 .syntax--list,
-.syntax--markup.syntax--bold,
-.syntax--markup.syntax--italic,
+.syntax--gfm.syntax--definition.syntax--begin,
+.syntax--gfm.syntax--definition.syntax--end,
+.syntax--gfm.syntax--support,
 .syntax--module,
 .syntax--module.syntax--all,
 .syntax--module .syntax--operator,
@@ -157,6 +163,8 @@
 .syntax--comment,
 .syntax--comment.syntax--punctuation,
 .syntax--comment .syntax--link,
+.syntax--gfm.syntax--comment .syntax--hyperlink,
+.syntax--gfm.syntax--support.syntax--quote,
 .syntax--jsx.syntax--comment,
 .syntax--jsx.syntax--commented-out .syntax--punctuation {
   color: @one_dark_comment;
