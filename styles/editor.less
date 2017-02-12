@@ -41,6 +41,10 @@ atom-text-editor {
     background-color: @one_dark_cursor_line;
   }
 
+  .highlights .highlight-selected .region {
+    border: 1px solid @one_dark_comment;
+  }
+
   .selection .region {
     background-color: @one_dark_selection;
   }
@@ -56,8 +60,8 @@ atom-text-editor {
   }
 
   .bracket-matcher .region {
-    border: none;
-    outline: 1px solid @highlight_selected_border;
+    background-color: @one_dark_selection;
+    border: 1px solid @one_dark_comment;
   }
 
   .spell-check-misspelling .region {
