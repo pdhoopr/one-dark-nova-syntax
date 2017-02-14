@@ -18,6 +18,7 @@
 .syntax--css.syntax--attribute-value .syntax--string.syntax--punctuation,
 .syntax--css.syntax--property-value,
 .syntax--dictionary.syntax--value,
+.syntax--editorconfig.syntax--constant,
 .syntax--html.syntax--id,
 .syntax--gfm.syntax--comment .syntax--link,
 .syntax--markup.syntax--link,
@@ -46,7 +47,7 @@
   color: @nova_bright_magenta;
 }
 
-.syntax--entity.syntax--gfm,
+.syntax--gfm.syntax--entity,
 .syntax--json.syntax--dictionary:not(.syntax--value) > .syntax--string,
 .syntax--json.syntax--dictionary:not(.syntax--value) > .syntax--string .syntax--punctuation,
 .syntax--object.syntax--key,
@@ -60,6 +61,8 @@
 .syntax--css.syntax--attribute-name,
 .syntax--css.syntax--attribute-name.syntax--class,
 .syntax--css.syntax--attribute-name .syntax--punctuation,
+.syntax--editorconfig.syntax--group-title,
+.syntax--editorconfig.syntax--group-title .syntax--punctuation,
 .syntax--entity.syntax--class,
 .syntax--function.syntax--entity,
 .syntax--html.syntax--tag,
@@ -83,6 +86,7 @@
 .syntax--control,
 .syntax--css.syntax--meta.syntax--property-value,
 .syntax--css.syntax--property-name,
+.syntax--editorconfig.syntax--keyword,
 .syntax--html.syntax--attribute-name,
 .syntax--jsx.syntax--attribute-name,
 .syntax--markup.syntax--bold,
