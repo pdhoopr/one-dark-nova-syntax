@@ -87,6 +87,8 @@
 .syntax--jsx.syntax--attribute-name,
 .syntax--markup.syntax--bold,
 .syntax--markup.syntax--italic,
+.syntax--operator,
+.syntax--operator.syntax--punctuation,
 .syntax--scss.syntax--meta.syntax--property-value,
 .syntax--scss.syntax--property-name,
 .syntax--xml.syntax--attribute-name {
@@ -101,10 +103,15 @@
   font-style: italic;
 }
 
+.syntax--arrow,
 .syntax--css.syntax--pseudo-class,
 .syntax--css.syntax--pseudo-class .syntax--punctuation,
+.syntax--css.syntax--pseudo-element,
+.syntax--css.syntax--pseudo-element .syntax--punctuation,
 .syntax--scss.syntax--pseudo-class,
 .syntax--scss.syntax--pseudo-class .syntax--punctuation,
+.syntax--scss.syntax--pseudo-element,
+.syntax--scss.syntax--pseudo-element .syntax--punctuation,
 .syntax--storage {
   color: @nova_normal_green;
 }
@@ -128,14 +135,12 @@
   font-style: italic;
 }
 
-.syntax--arrow,
 .syntax--brace.syntax--curly,
 .syntax--brace.syntax--round,
 .syntax--brace.syntax--square,
 .syntax--css.syntax--at-rule.syntax--control,
 .syntax--css.syntax--at-rule.syntax--control .syntax--punctuation,
 .syntax--css.syntax--attribute-selector .syntax--punctuation,
-.syntax--css.syntax--attribute-selector .syntax--operator.syntax--punctuation,
 .syntax--css.syntax--function,
 .syntax--css.syntax--property-list,
 .syntax--css.syntax--source,
@@ -153,8 +158,8 @@
 .syntax--module.syntax--all,
 .syntax--module .syntax--operator,
 .syntax--nunjucks.syntax--delimiter,
-.syntax--operator,
-.syntax--operator.syntax--punctuation,
+.syntax--operator.syntax--accessor,
+.syntax--operator.syntax--assignment,
 .syntax--punctuation.syntax--class,
 .syntax--punctuation.syntax--parameters,
 .syntax--quasi.syntax--begin,
@@ -162,7 +167,6 @@
 .syntax--scss.syntax--at-rule.syntax--control,
 .syntax--scss.syntax--at-rule.syntax--control .syntax--punctuation,
 .syntax--scss.syntax--attribute-selector .syntax--punctuation,
-.syntax--scss.syntax--attribute-selector .syntax--operator.syntax--punctuation,
 .syntax--scss.syntax--bracket.syntax--curly,
 .syntax--scss.syntax--function,
 .syntax--scss.syntax--reference {
